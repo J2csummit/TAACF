@@ -1,0 +1,66 @@
+img.logo {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.frontbutton {
+	margin-top: 25px;
+}
+
+.indbuttons {
+	margin-top: 25px;
+	text-align: center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.lastbutton {
+	margin-bottom: 20px;
+}
+.central {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	text-align: center;
+}
+
+.schedbtn {
+	margin-right: auto;
+	margin-left: auto;
+}
+h1 {
+	font-family: Arial;
+	font-size: 25px;
+	text-align: center;
+}
+
+img.social {
+	width: 60px;
+	height: auto;
+	margin: 15px;
+	opacity: 0.3;
+}
+
+img.social:hover {
+	opacity: 1.0;
+}
+
+.central {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	text-align: center;
+}
+.abouttable{
+	width: 150px;
+}
+.schedtable{
+	max-width: 400px;
+	padding-right: 10px;
+}
+ul{
+	list-style-type: none;
+	padding: 0;
+}
