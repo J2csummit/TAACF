@@ -19,7 +19,7 @@
 <body>
 
 <div data-role="page" data-theme= "c" id="home">
-  <div data-role="content" class="ui-content">
+  <div data-role="content" class="ui-content" id="content_home">
     <img class="logo" src="logo.png" alt="logoimg">
     <div class="indbuttons frontbutton">
       <a href="#Schedule" class="ui-shadow ui-btn-c ui-btn ui-corner-all" data-role="button" data-transition="slide" onclick="get_window_height()">Schedule</a>
@@ -51,7 +51,7 @@
     </div>
   </div>
   <div data-role="tabs" id="tabs" style="padding:0px;margin:0px;">
-    <div data-role="main" class="ui-content" style="overflow:auto;">
+    <div data-role="main" class="ui-content" id="content_Schedule" style="overflow:auto;">
       <div id="artistSet">
         <h4>Intro with Todd Evans & Gary Ponder</h4>
         <br>
@@ -282,7 +282,7 @@
     <a href="#home" class="ui-btn ui-btn-c ui-corner-all ui-icon-home ui-btn-icon-left" data-transition="slide" data-direction="reverse" onclick="return_height()">Home</a>
   </div>
 
-  <div data-role="main" class="ui-content" style="text-align:center;">
+  <div data-role="main" class="ui-content" id="content_about" style="text-align:center;">
     <h3 class="ui-bar ui-bar-b ui-corner-all">Who Are We</h3>
     <div class="ui-body ui-body-c ui-corner-all">
       <p>The annual festival is produced each year by its executive committee with the support of the city of Trenton, Mercer County, and sponsors like you.</p>
