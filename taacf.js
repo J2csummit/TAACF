@@ -10,3 +10,7 @@ function get_about_height(){
     var height = (winDow - 79);
     $(".ui-content").css('height', height);
 }
+function return_height(){
+	var winDow = $(window).height();
+    $(".ui-content").css('height', winDow);
+}
