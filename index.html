@@ -13,10 +13,11 @@
   <script src="theme/jquery-1.11.1.min.js"></script>
   <script src="theme/jquery.mobile-1.4.3.min.js"></script>
   <script src="taacf.js"></script>
-
 </head>
 
 <body>
+
+<!-- Home Page -->
 
 <div data-role="page" data-theme= "c" id="home">
   <div data-role="content" class="ui-content" id="content_home">
@@ -38,6 +39,10 @@
   </div>
 </div>
 
+<!-- Schedule Page -->
+
+  <!-- (Schedule) Main Festival -->
+
 <div data-role="page" data-theme= "c" id="Schedule">
   <div data-role="header" style="margin:0px;" id="headerpt1">
     <h1>Schedule</h1>
@@ -45,8 +50,8 @@
     <div data-role="navbar" id="headerpt2">
         <ul>
             <li><a href="#Schedule" class="ui-btn-active ui-state-persist" data-transition="none" onclick="get_window_height()">Main Festival</a></li>
-            <li><a href="#youthExpo" data-transition="none">Youth Sports Expo</a></li>
-            <li><a href="#specialEvents" data-transition="none">Special Events</a></li>
+            <li><a href="#youthExpo" data-transition="none" onclick="get_window_height()">Youth Sports Expo</a></li>
+            <li><a href="#specialEvents" data-transition="none" onclick="get_window_height()">Special Events</a></li>
         </ul>
     </div>
   </div>
@@ -248,33 +253,150 @@
   </div>
 </div>
 
+  <!-- (Schedule) Youth Expo -->
+
 <div data-role="page" data-theme= "c" id="youthExpo">
   <div data-role="header" style="margin:0px;">
     <h1>Schedule</h1>
     <a href="#home" class="ui-btn ui-btn-c ui-corner-all ui-icon-home ui-btn-icon-left" data-transition="slide" data-direction="reverse" onclick="return_height()">Home</a>
-  </div>
-  <div data-role="navbar">
+    <div data-role="navbar">
       <ul>
           <li><a href="#Schedule" data-transition="none" onclick="get_window_height()">Main Festival</a></li>
-          <li><a href="#youthExpo" class="ui-btn-active ui-state-persist" data-transition="none">Youth Sports Expo</a></li>
-          <li><a href="#specialEvents" data-transition="none">Special Events</a></li>
+          <li><a href="#youthExpo" class="ui-btn-active ui-state-persist" data-transition="none" onclick="get_window_height()">Youth Sports Expo</a></li>
+          <li><a href="#specialEvents" data-transition="none" onclick="get_window_height()">Special Events</a></li>
       </ul>
+    </div>
+  </div>
+  <div data-role="main" class="ui-content" id="content_youth" style="overflow:auto;">
+    <h4>Sports Expo</h4>
+    <br>
+    <strong>12:00 &ndash; 3:00</strong>
+    <ul>
+      <li>West End Little League</li>
+      <li>North Trenton Little League</li>
+      <li>South Trenton Little League</li>
+      <li>Chambersburg Little League</li>
+    </ul>
+    <strong>12:00 &ndash; 1:00</strong>
+    <ul>
+      <li>Trenton Pop Warner Football</li>
+      <li>Youth Basketball Clinic 7-9 year old</li>
+      <li>First Tee Golfing</li>
+    </ul>
+    <strong>12:30 &ndash; 2:00</strong>
+    <ul>
+      <li>National Junior Tennis League</li>
+    </ul>
+    <strong>1:00 &ndash; 2:00</strong>
+    <ul>
+      <li>Fencing (Temple University Students)</li>
+      <li>HEE2 Youth Basketball Clinic 10-12 year old</li>
+    </ul>
+    <strong>1:30 &ndash; 2:30</strong>
+    <ul>
+      <li>Trenton Bridge LaCrosse</li>
+    </ul>
+    <strong>2:00 &ndash; 3:00</strong>
+    <ul>
+      <li>HEE2 Youth Basketball Clinic 13-15 year old</li>
+    </ul>
+    <strong>2:15 &ndash; 3:30</strong>
+    <ul>
+      <li>Martial Arts (Trenton YMCA)</li>
+    </ul>
+    <strong>2:45 &ndash; 3:30</strong>
+    <ul>
+      <li>Living Hope Empowerment Church Soccer League</li>
+    </ul>
+    <strong>3:00 &ndash; 4:00</strong>
+    <ul>
+      <li>Eric Judkins Boxing</li>
+    </ul>
+    <strong>3:00 &ndash; 4:30</strong>
+    <ul>
+      <li>From the Block to the Boardroom Annual Charity Basketball game</li>
+    </ul>
   </div>
 </div>
+
+
+  <!-- (Schedule) Special Events -->
 
 <div data-role="page" data-theme= "c" id="specialEvents">
   <div data-role="header" style="margin:0px;">
     <h1>Schedule</h1>
     <a href="#home" class="ui-btn ui-btn-c ui-corner-all ui-icon-home ui-btn-icon-left" data-transition="slide" data-direction="reverse" onclick="return_height()">Home</a>
-  </div>
-  <div data-role="navbar">
+    <div data-role="navbar">
       <ul>
           <li><a href="#Schedule" data-transition="none" onclick="get_window_height()">Main Festival</a></li>
-          <li><a href="#youthExpo" data-transition="none">Youth Sports Expo</a></li>
-          <li><a href="#specialEvents" class="ui-btn-active ui-state-persist" data-transition="none">Special Events</a></li>
+          <li><a href="#youthExpo" data-transition="none" onclick="get_window_height()">Youth Sports Expo</a></li>
+          <li><a href="#specialEvents" class="ui-btn-active ui-state-persist" data-transition="none" onclick="get_window_height()">Special Events</a></li>
       </ul>
+    </div>
+  </div>
+  <div data-role="main" class="ui-content" id="content_special" style="overflow:auto;">
+    <div data-role="collapsibleset">
+      <div data-role="collapsible" data-mini="true" onclick="get_window_height()">
+        <h4>12:00 &ndash; Double Gallery<br>The Warmth of Other Suns: the Epic Story of America&#39;s Great Migration by Isabel Wilkerson</h4>
+        <p>
+          In this epic, beautifully written masterwork, Pulitzer Prize&ndash;winning author Isabel Wilkerson chronicles one of the great untold stories of American history: the decades-long migration of black citizens who fled the South for northern and western cities, in search of a better life. From 1915 to 1970, this exodus of almost six million people changed the face of America. The book has a strong impact on all who read it. What impact did it have on you?
+        </p>
+      </div>
+      <div data-role="collapsible" data-mini="true" onclick="get_window_height()">
+        <h4>1:00 &ndash; Malloy Gallery<br>Student Films</h4>
+        <br>
+        <strong>It Could be You, Shana Langley</strong>
+        <p>
+          Frustrated at the lack of understanding, one 17 year old girl decided to challenge traditional perceptions about gangs, criminal activity, and the people who are involved. Seeking first to understand, then to be understood, Shana is thrust into the lives of three Trentonians who come from completely different worlds. As her journey progresses, Shana comes to an interesting conclusion. Anyone can fall victim to criminal activities. Even you...
+        </p>
+        <strong>Breaking Free, Kenya Bullock</strong>
+        <p>
+          No longer wanting to be molded by sculptors, this is a depiction of a sculpture making and taking its own shape.
+        </p>
+        <strong>Hood Ball, Hafeez Abdullah</strong>
+        <p>
+          What happens when coolness can&#39;t save you from the toughness of the Streets? When taking a turn for the worse literally means walking on the wrong street at the wrong time? This short films teaches the well known game of Hood Ball, and motivates everyone to play it when their life is on the line.
+        </p>
+        <strong>What Doesn&#39;t Kill Makes You Stronger, Keeosha Harris</strong>
+        <p>
+          We&#39;ve all participated in Cancer Walk and have maybe even donated to causes dedicated to finding the cure to cancer, but what else can be done? How does it really feel to live with Cancer? This Short Documentary depicts the true realties of Cancer.
+        </p>
+      </div>
+      <div data-role="collapsible" data-mini="true" onclick="get_window_height()">
+        <h4>1:00 &ndash; Double Gallery<br>African American Life In, Around, and Beyond the Shadow of Trenton&#39;s Battle Monument.</h4>
+        <p>
+          Power Point Presentation and Discussion Produced and presented by Betty Lacy
+        </p>
+      </div>
+      <div data-role="collapsible" data-mini="true" onclick="get_window_height()">
+        <h4>2:00 &ndash; Double Gallery<br>The Great Migration and You</h4>
+        <p>
+          Did your family migrate North to avoid the Jim Crow South? Share your story. Where did they come from? What brought them to Trenton? Have any joined the reverse migration back to the South?
+        </p>
+      </div>
+      <div data-role="collapsible" data-mini="true" onclick="get_window_height()">
+        <h4>3:00 &ndash; Malloy Gallery<br>Student Films</h4>
+        <p>
+          (See 1 pm schedule)
+        </p>
+      </div>
+      <div data-role="collapsible" data-mini="true" onclick="get_window_height()">
+        <h4>3:00 &ndash; Double Gallery<br>Three Centuries of African-American Historic Sites in Trenton</h4>
+        <p>
+          A variety of places in Trenton tell the story from the 18th century through the modern Civil Rights era. Presented by the Trenton Historical Society with Helen Shannon.
+        </p>
+      </div>
+      <div data-role="collapsible" data-mini="true" onclick="get_window_height()">
+        <h4>5:00 &ndash; Malloy Gallery<br>Student Films</h4>
+        <p>
+          (See 1 pm schedule)
+        </p>
+      </div>
+    </div>
   </div>
 </div>
+
+<!-- About Page -->
 
 <div data-role="page" data-theme="c" id="theabout">
   <div data-role="header">
