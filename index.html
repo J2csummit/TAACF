@@ -12,243 +12,269 @@
   <link rel="stylesheet" href="theme/jquery.mobile.icons.min.css" />
   <script src="theme/jquery-1.11.1.min.js"></script>
   <script src="theme/jquery.mobile-1.4.3.min.js"></script>
+  <script src="taacf.js"></script>
 
 </head>
 
 <body>
 
-  <div data-role="page" data-theme= "c" id="home">
-    <div data-role="content" class="ui-content">
-      <img class="logo" src="logo.png" alt="logoimg">
-      <div class="indbuttons frontbutton">
-        <a href="#Schedule" class="ui-shadow ui-btn-c ui-btn ui-corner-all" data-role="button" data-transition="slide">Schedule</a>
-      </div>
-      <div class="indbuttons">
-        <a href="index.html" class="ui-shadow ui-btn-c ui-btn ui-corner-all"data-role="button" data-transition="slide">Map</a>
-      </div>
-      <div class="indbuttons lastbutton">
-        <a href="#theabout" class="ui-shadow ui-btn-c ui-btn ui-corner-all" data-role="button" data-transition="slide">About</a>
-      </div>
-      <div class="central">
-        <a href="http://instagram.com/TRENTONCULTURAL_FESTIVAL"><img class="social" img src="instagram.png"></a>
-        <a href="https://www.facebook.com/trentonaapride"><img class="social" img src="facebook-icon.png"></a>
-        <a href="https://twitter.com/Trentonaafest"><img class="social" img src="social_twitter.png"></a>
-      </div>
+<div data-role="page" data-theme= "c" id="home">
+  <div data-role="content" class="ui-content">
+    <img class="logo" src="logo.png" alt="logoimg">
+    <div class="indbuttons frontbutton">
+      <a href="#Schedule" class="ui-shadow ui-btn-c ui-btn ui-corner-all" data-role="button" data-transition="slide" onclick="get_window_height()">Schedule</a>
+    </div>
+    <div class="indbuttons">
+      <a href="index.html" class="ui-shadow ui-btn-c ui-btn ui-corner-all"data-role="button" data-transition="slide">Map</a>
+    </div>
+    <div class="indbuttons lastbutton">
+      <a href="#theabout" class="ui-shadow ui-btn-c ui-btn ui-corner-all" data-role="button" data-transition="slide"onclick="get_about_height()" >About</a>
+    </div>
+    <div class="central">
+      <a href="http://instagram.com/TRENTONCULTURAL_FESTIVAL"><img class="social" img src="instagram.png"></a>
+      <a href="https://www.facebook.com/trentonaapride"><img class="social" img src="facebook-icon.png"></a>
+      <a href="https://twitter.com/Trentonaafest"><img class="social" img src="social_twitter.png"></a>
     </div>
   </div>
+</div>
 
-  <div data-role="page" data-theme= "c" id="Schedule">
-    <div data-role="header" style="margin:0px;">
-      <h1>Schedule</h1>
-      <a href="#home" class="ui-btn ui-btn-c ui-corner-all ui-icon-home ui-btn-icon-left" data-transition="slide" data-direction="reverse">Home</a>
+<div data-role="page" data-theme= "c" id="Schedule">
+  <div data-role="header" style="margin:0px;" id="headerpt1">
+    <h1>Schedule</h1>
+    <a href="#home" class="ui-btn ui-btn-c ui-corner-all ui-icon-home ui-btn-icon-left" data-transition="slide" data-direction="reverse">Home</a>
+    <div data-role="navbar" id="headerpt2">
+        <ul>
+            <li><a href="#Schedule" class="ui-btn-active ui-state-persist" data-transition="none" onclick="get_window_height()">Main Festival</a></li>
+            <li><a href="#youthExpo" data-transition="none">Youth Sports Expo</a></li>
+            <li><a href="#specialEvents" data-transition="none">Special Events</a></li>
+        </ul>
     </div>
-    <div data-role="tabs" id="tabs" style="padding:0px;margin:0px;">
+  </div>
+  <div data-role="tabs" id="tabs" style="padding:0px;margin:0px;">
+    <div data-role="main" class="ui-content" style="overflow:auto;">
+      <div id="artistSet">
+        <h4>Intro with Todd Evans & Gary Ponder</h4>
+        <br>
+        <strong>12:15</strong>
+        <p>
+          Gary Ponder Gospel Set
+        </p>
+        <strong>12:30</strong>
+        <p>
+          Marsha Collins & Friends<br>
+          Terrance Williams<br>
+          Evngelist Cyntia White<br>
+          Poet Selection By:<br>
+          Hafeez<br>
+          Janine (Poetic Jewel)<br>
+          Marvin Lewis<br>
+          Intro to R&B Set (Gary Ponder)
+        </p>
+        <strong>1:45 - 2:00</strong>
+        <p>
+          Kai (Deyonna)<br>
+          Tash Jasmine<br>
+          Rasheen<br>
+          Love parq<br>
+          Sol-T (Taylor)<br>
+          Shaine
+        </p>
+        <h4>Intro to Poet Set (Todd Evans)</h4>
+        <br>
+        <strong>3:15-3:30</strong>
+        <p>
+          Don Evans Skit/Play<br>
+          Maya Grantham<br>
+          Xtra Lenz<br>
+          Reggie Walker
+        </p>
+        <h4>Intro to Rock Out (Hip Hop Style) (Todd Evans)</h4>
+        <br>
+        <strong>4:30 - 6:30</strong>
+        <p>
+          Mo Flex & Destiny AKA Ladibug<br>
+          O&#39;fficial<br>
+          Sirweah<br>
+          Sonic Assad (Sherwin Williams)<br>
+          Problem Child 609<br>
+          Regda Ruler<br>
+          Almighty & corey &quot;KD&quot; Miller<br>
+          Black Collar Biz
+        </p>
+      </div>
+      <div id="mainSet">
+        <h4>Drum Call/Libation</h4>
+        <br>
+        <table style="text-align:left;">
+          <tbody>
+            <tr>
+              <th class="schedtable">12:15</th>
+              <td class="schedtable">Egun Omode</td>
+            </tr>
+            <tr>
+              <th class="schedtable">12:25</th>
+              <td class="schedtable">Interdenominational Prayer</td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <h4>Drum Call with Procession of Elders</h4>
+        <br>
+        <table style="text-align:left;">
+          <tbody>
+            <tr>
+              <th class="schedtable">12:30</th>
+              <td class="schedtable">Egun Omode</td>
+            </tr>
+            <tr>
+              <th class="schedtable">12:40-12:55</th>
+              <td class="schedtable">Black History Honorees</td>
+            </tr>
+            <tr>
+              <th class="schedtable">1:00-1:25</th>
+              <td class="schedtable">DJ 007</td>
+            </tr>
+            <tr>
+              <th class="schedtable">1:30-2:00</th>
+              <td class="schedtable">Rebob</td>
+            </tr>
+            <tr>
+              <th class="schedtable">2:15-3:00</th>
+              <td class="schedtable">Leon Jordan</td>
+            </tr>
+            <tr>
+              <th class="schedtable">3:00-3:30</th>
+              <td class="schedtable">DJ</td>
+            </tr>
+            <tr>
+              <th class="schedtable">3:30-4:15</th>
+              <td class="schedtable">Illstyle Peace Productions</td>
+            </tr>
+            <tr>
+              <th class="schedtable">4:15-4:30</th>
+              <td class="schedtable">Egun Omode</td>
+            </tr>
+            <tr>
+              <th class="schedtable">4:30-4:45</th>
+              <td class="schedtable">DJ 007</td>
+            </tr>
+            <tr>
+              <th class="schedtable">4:45-5:30</th>
+              <td class="schedtable">Grace Little</td>
+            </tr>
+            <tr>
+              <th class="schedtable">5:30-5:45</th>
+              <td class="schedtable">DJ 007</td>
+            </tr>
+            <tr>
+              <th class="schedtable">5:45-6:15</th>
+              <td class="schedtable">Egun Omode</td>
+            </tr>
+            <tr>
+              <th class="schedtable">6:15-6:30</th>
+              <td class="schedtable">DJ 007</td>
+            </tr>
+            <tr>
+              <th class="schedtable">6:30-7:15</th>
+              <td class="schedtable">Kindred the Family Soul</td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+      </div>
+      <div id="carribeanSet">
+        <h4>Schedule</h4>
+        <br>
+        <table style="text-align:left;">
+          <tbody>
+            <tr>
+              <th class="schedtable">12:30</th>
+              <td class="schedtable">TIM</td>
+            </tr>
+            <tr>
+              <th class="schedtable">2:30</th>
+              <td class="schedtable">Young Rass</td>
+            </tr>
+            <tr>
+              <th class="schedtable">4:00</th>
+              <td class="schedtable">Ky-enie King</td>
+            </tr>
+            <tr>
+              <th class="schedtable">4:08</th>
+              <td class="schedtable">Karizma</td>
+            </tr>
+            <tr>
+              <th class="schedtable">4:20</th>
+              <td class="schedtable">Suga</td>
+            </tr>
+            <tr>
+              <th class="schedtable">4:45</th>
+              <td class="schedtable">Gyalish In Paris</td>
+            </tr>
+            <tr>
+              <th class="schedtable">4:52</th>
+              <td class="schedtable">Corry Dip</td>
+            </tr>
+            <tr>
+              <th class="schedtable">5:00</th>
+              <td class="schedtable">Moncherie</td>
+            </tr>
+            <tr>
+              <th class="schedtable">5:08</th>
+              <td class="schedtable">Lion Pawm Twinnz</td>
+            </tr>
+            <tr>
+              <th class="schedtable">5:15</th>
+              <td class="schedtable">Butta Music</td>
+            </tr>
+            <tr>
+              <th class="schedtable">5:22</th>
+              <td class="schedtable">Selecta Bam Bam</td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+      </div>
+    </div>
+    <div data-role="footer" id="footer">
       <div data-role="navbar">
         <ul>
-          <li><a href="#artistSet" data-ajax="false" class="ui-btn-active">Artist Row</a></li>
-          <li><a href="#mainSet" data-ajax="false">Main</a></li>
-          <li><a href="#carribeanSet" data-ajax="false">Carribean</a></li>
+          <li><a href="#artistSet" data-ajax="false" class="ui-btn-active" onclick="get_window_height()">Artist Row Stage</a></li>
+          <li><a href="#mainSet" data-ajax="false" onclick="get_window_height()">Main Stage</a></li>
+          <li><a href="#carribeanSet" data-ajax="false" onclick="get_window_height()">Carribean Stage</a></li>
         </ul>
-      </div>
-      <div data-role="main" class="ui-content">
-        <div id="artistSet" data-role="collapsibleset">
-          <div data-role="collapsible" data-mini="true">
-            <h4>Intro with Todd Evans & Gary Ponder</h4>
-            <br>
-            <strong>12:15</strong>
-            <p>
-              Gary Ponder Gospel Set
-            </p>
-            <strong>12:30</strong>
-            <p>
-              Marsha Collins & Friends<br>
-              Terrance Williams<br>
-              Evngelist Cyntia White<br>
-              Poet Selection By:<br>
-              Hafeez<br>
-              Janine (Poetic Jewel)<br>
-              Marvin Lewis<br>
-              Intro to R&B Set (Gary Ponder)
-            </p>
-            <strong>1:45 - 2:00</strong>
-            <p>
-              Kai (Deyonna)<br>
-              Tash Jasmine<br>
-              Rasheen<br>
-              Love parq<br>
-              Sol-T (Taylor)<br>
-              Shaine
-            </p>
-          </div>
-          <div data-role="collapsible" data-mini="true">
-            <h4>Intro to Poet Set (Todd Evans)</h4>
-            <br>
-            <strong>3:15-3:30</strong>
-            <p>
-              Don Evans Skit/Play<br>
-              Maya Grantham<br>
-              Xtra Lenz<br>
-              Reggie Walker
-            </p>
-          </div>
-          <div data-role="collapsible" data-mini="true">
-            <h4>Intro to Rock Out (Hip Hop Style) (Todd Evans)</h4>
-            <br>
-            <strong>4:30 - 6:30</strong>
-            <p>
-              Mo Flex & Destiny AKA Ladibug<br>
-              O&#39;fficial<br>
-              Sirweah<br>
-              Sonic Assad (Sherwin Williams)<br>
-              Problem Child 609<br>
-              Regda Ruler<br>
-              Almighty & corey &quot;KD&quot; Miller<br>
-              Black Collar Biz
-            </p>
-          </div>
-        </div>
-        <div id="mainSet" data-role="collapsibleset">
-          <div data-role="collapsible" data-mini="true">
-            <h4>Drum Call/Libation</h4>
-            <br>
-            <table style="text-align:left;">
-              <tbody>
-                <tr>
-                  <th class="schedtable">12:15</th>
-                  <td class="schedtable">Egun Omode</td>
-                </tr>
-                <tr>
-                  <th class="schedtable">12:25</th>
-                  <td class="schedtable">Interdenominational Prayer</td>
-                </tr>
-              </tbody>
-            </table>
-            <br>
-          </div>
-          <div data-role="collapsible" data-mini="true">
-            <h4>Drum Call with Procession of Elders</h4>
-            <br>
-            <table style="text-align:left;">
-              <tbody>
-                <tr>
-                  <th class="schedtable">12:30</th>
-                  <td class="schedtable">Egun Omode</td>
-                </tr>
-                <tr>
-                  <th class="schedtable">12:40-12:55</th>
-                  <td class="schedtable">Black History Honorees</td>
-                </tr>
-                <tr>
-                  <th class="schedtable">1:00-1:25</th>
-                  <td class="schedtable">DJ 007</td>
-                </tr>
-                <tr>
-                  <th class="schedtable">1:30-2:00</th>
-                  <td class="schedtable">Rebob</td>
-                </tr>
-                <tr>
-                  <th class="schedtable">2:15-3:00</th>
-                  <td class="schedtable">Leon Jordan</td>
-                </tr>
-                <tr>
-                  <th class="schedtable">3:00-3:30</th>
-                  <td class="schedtable">DJ</td>
-                </tr>
-                <tr>
-                  <th class="schedtable">3:30-4:15</th>
-                  <td class="schedtable">Illstyle Peace Productions</td>
-                </tr>
-                <tr>
-                  <th class="schedtable">4:15-4:30</th>
-                  <td class="schedtable">Egun Omode</td>
-                </tr>
-                <tr>
-                  <th class="schedtable">4:30-4:45</th>
-                  <td class="schedtable">DJ 007</td>
-                </tr>
-                <tr>
-                  <th class="schedtable">4:45-5:30</th>
-                  <td class="schedtable">Grace Little</td>
-                </tr>
-                <tr>
-                  <th class="schedtable">5:30-5:45</th>
-                  <td class="schedtable">DJ 007</td>
-                </tr>
-                <tr>
-                  <th class="schedtable">5:45-6:15</th>
-                  <td class="schedtable">Egun Omode</td>
-                </tr>
-                <tr>
-                  <th class="schedtable">6:15-6:30</th>
-                  <td class="schedtable">DJ 007</td>
-                </tr>
-                <tr>
-                  <th class="schedtable">6:30-7:15</th>
-                  <td class="schedtable">Kindred the Family Soul</td>
-                </tr>
-              </tbody>
-            </table>
-            <br>
-          </div>
-        </div>
-        <div id="carribeanSet" data-role="collapsibleset">
-          <div data-role="collapsible" data-mini="true">
-            <h4>Schedule</h4>
-            <br>
-            <table style="text-align:left;">
-              <tbody>
-                <tr>
-                  <th class="schedtable">12:30</th>
-                  <td class="schedtable">TIM</td>
-                </tr>
-                <tr>
-                  <th class="schedtable">2:30</th>
-                  <td class="schedtable">Young Rass</td>
-                </tr>
-                <tr>
-                  <th class="schedtable">4:00</th>
-                  <td class="schedtable">Ky-enie King</td>
-                </tr>
-                <tr>
-                  <th class="schedtable">4:08</th>
-                  <td class="schedtable">Karizma</td>
-                </tr>
-                <tr>
-                  <th class="schedtable">4:20</th>
-                  <td class="schedtable">Suga</td>
-                </tr>
-                <tr>
-                  <th class="schedtable">4:45</th>
-                  <td class="schedtable">Gyalish In Paris</td>
-                </tr>
-                <tr>
-                  <th class="schedtable">4:52</th>
-                  <td class="schedtable">Corry Dip</td>
-                </tr>
-                <tr>
-                  <th class="schedtable">5:00</th>
-                  <td class="schedtable">Moncherie</td>
-                </tr>
-                <tr>
-                  <th class="schedtable">5:08</th>
-                  <td class="schedtable">Lion Pawm Twinnz</td>
-                </tr>
-                <tr>
-                  <th class="schedtable">5:15</th>
-                  <td class="schedtable">Butta Music</td>
-                </tr>
-                <tr>
-                  <th class="schedtable">5:22</th>
-                  <td class="schedtable">Selecta Bam Bam</td>
-                </tr>
-              </tbody>
-            </table>
-            <br>
-          </div>
-        </div>
       </div>
     </div>
   </div>
+</div>
+
+<div data-role="page" data-theme= "c" id="youthExpo">
+  <div data-role="header" style="margin:0px;">
+    <h1>Schedule</h1>
+    <a href="#home" class="ui-btn ui-btn-c ui-corner-all ui-icon-home ui-btn-icon-left" data-transition="slide" data-direction="reverse">Home</a>
+  </div>
+  <div data-role="navbar">
+      <ul>
+          <li><a href="#Schedule" data-transition="none" onclick="get_window_height()">Main Festival</a></li>
+          <li><a href="#youthExpo" class="ui-btn-active ui-state-persist" data-transition="none">Youth Sports Expo</a></li>
+          <li><a href="#specialEvents" data-transition="none">Special Events</a></li>
+      </ul>
+  </div>
+</div>
+
+<div data-role="page" data-theme= "c" id="specialEvents">
+  <div data-role="header" style="margin:0px;">
+    <h1>Schedule</h1>
+    <a href="#home" class="ui-btn ui-btn-c ui-corner-all ui-icon-home ui-btn-icon-left" data-transition="slide" data-direction="reverse">Home</a>
+  </div>
+  <div data-role="navbar">
+      <ul>
+          <li><a href="#Schedule" data-transition="none" onclick="get_window_height()">Main Festival</a></li>
+          <li><a href="#youthExpo" data-transition="none">Youth Sports Expo</a></li>
+          <li><a href="#specialEvents" class="ui-btn-active ui-state-persist" data-transition="none">Special Events</a></li>
+      </ul>
+  </div>
+</div>
 
 <div data-role="page" data-theme="c" id="theabout">
   <div data-role="header">
