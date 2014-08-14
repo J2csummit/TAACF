@@ -22,14 +22,15 @@
 <div data-role="page" data-theme= "c" id="home">
   <div data-role="content" class="ui-content" id="content_home">
     <img class="logo" src="logo.png" alt="logoimg">
+    <br>
     <div class="indbuttons frontbutton">
-      <a href="#Schedule" class="ui-shadow ui-btn-c ui-btn ui-corner-all" data-role="button" data-transition="slide" onclick="get_window_height()">Schedule</a>
+      <a href="#Schedule" class="frontbtns ui-btn-inline ui-shadow ui-btn-c ui-btn ui-corner-all" data-role="button" data-transition="slide" onclick="get_window_height()">Schedule</a>
     </div>
     <div class="indbuttons">
-      <a href="index.html" class="ui-shadow ui-btn-c ui-btn ui-corner-all"data-role="button" data-transition="slide">Map</a>
+      <a href="#themap" class="frontbtns ui-btn-inline ui-shadow ui-btn-c ui-btn ui-corner-all"data-role="button" data-transition="slide">Map</a>
     </div>
     <div class="indbuttons lastbutton">
-      <a href="#theabout" class="ui-shadow ui-btn-c ui-btn ui-corner-all" data-role="button" data-transition="slide"onclick="get_about_height()" >About</a>
+      <a href="#theabout" class="frontbtns ui-btn-inline ui-shadow ui-btn-c ui-btn ui-corner-all" data-role="button" data-transition="slide"onclick="get_about_height()" >About</a>
     </div>
     <div class="central">
       <a href="http://instagram.com/TRENTONCULTURAL_FESTIVAL"><img class="social" img src="instagram.png"></a>
@@ -58,7 +59,7 @@
   <div data-role="tabs" id="tabs" style="padding:0px;margin:0px;">
     <div data-role="main" class="ui-content" id="content_Schedule" style="overflow:auto;">
       <div class="ui-body-c ui-corner-all" id="artistSet" style="text-align:center;">
-        <h4>Intro with<br>Todd Evans & Gary Ponder</h4>
+        <h4>Intro with Todd Evans & Gary Ponder</h4>
         <br>
         <strong>12:15</strong>
         <p>
@@ -123,7 +124,7 @@
           </tbody>
         </table>
         <br>
-        <h4>Drum Call with<br>Procession of Elders</h4>
+        <h4>Drum Call with Procession of Elders</h4>
         <br>
         <table style="text-align:left;">
           <tbody>
@@ -439,6 +440,19 @@
         <li>Cadwalander Dr.</li>
       </ul>
     </div>
+  </div>
+</div>
+
+<!-- Map Page -->
+
+<div data-role="page" data-theme="c" id="themap">
+  <div data-role="header">
+    <h1>Map</h1>
+    <a href="#home" class="ui-btn ui-btn-c ui-corner-all ui-icon-home ui-btn-icon-left" data-transition="slide" data-direction="reverse" onclick="return_height()">Home</a>
+  </div>
+  <br>
+  <div data-role="main" class="ui-content" id="content_about" style="text-align:center;">
+    <img class="map" img src="map.png">
   </div>
 </div>
 
